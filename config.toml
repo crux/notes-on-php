@@ -1,4 +1,4 @@
-baseurl = "http://sebrink.de"
+baseurl = ""
 languageCode = "en-us"
 title = 'my personal mumblings on PHP'
 # Copyright notice. This is displayer in the footer.
