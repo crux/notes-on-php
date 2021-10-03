@@ -1,0 +1,87 @@
+baseurl = "http://sebrink.de"
+languageCode = "en-us"
+title = 'my personal mumblings on PHP'
+# Copyright notice. This is displayer in the footer.
+copyright = "&copy; Copyright notice"
+theme = "crux"
+
+# Google Analytics API key.
+googleAnalytics = "Your Google Analytics tracking id"
+
+[params]
+  paginate = 10
+  custom_css = ["/css/custom.css"]
+  # Social accounts. Link to these accounts are displayed in the header and
+  # footer
+  twitter = "joe__six"
+  github = "crux"
+  gitlab = "dirk.luesebrink"
+  npm = "joe_six"
+  linkedin = "dluesebrink"
+  author = "dirk lüsebrink"
+  authorwebsite = "sebrink.de"
+  avatar = "https://en.gravatar.com/userimage/571871/21a091c27da305a4a323c884a83e7798.jpg?size=200"
+  contact = "mailto: dirk dot luesebrink at gmail com"
+  bio = "been here for a while, done a lot of things"
+  # Short subtitle/tagline. This is displayed in the header.
+  subtitle = '"There will always be an unlimited amount of unqualified PHP programmers available"'
+  # Logo image. This is displayed ogp image.
+  logo = "/path/to/logo"
+  favicon = "/path/to/favicon"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 2
+
+[[menu.main]]
+    identifier = "theme"
+    name = "/theme"
+    weight = 3
+
+[[menu.main]]
+    parent = "theme"
+    name = "creating-a-new-theme"
+    url = "/posts/creating-a-new-theme"
+    weight = 1
+
+[[menu.main]]
+    parent = "theme"
+    name = "migrate-from-jekyll"
+    url = "/posts/migrate-from-jekyll"
+    weight = 2
+
+[[menu.main]]
+    name = "Tags"
+    url = "/tags"
+    weight = 4
+
+[related]
+  # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+  threshold = 80
+
+  # To get stable "See also" sections we, by default, exclude newer related pages.
+  includeNewer = false
+
+  # Will lower case keywords in both queries and in the indexes.
+  toLower = false
+
+  [[related.indices]]
+  name = "keywords"
+  weight = 150
+  [[related.indices]]
+  name  = "author"
+  toLower = true
+  weight = 30
+  [[related.indices]]
+  name  = "tags"
+  weight = 100
+  [[related.indices]]
+  name  = "date"
+  weight = 10
+  pattern = "2017"
